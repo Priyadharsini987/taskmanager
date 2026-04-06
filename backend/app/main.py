@@ -27,6 +27,9 @@ from app.tasks_logic import (
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="Task Manager API", version="1.0.0")
+@app.get("/")
+def home():
+    return {"message": "Task Manager API is running 🚀"}
 
 # CORS — allow frontend on localhost:5173
 app.add_middleware(
