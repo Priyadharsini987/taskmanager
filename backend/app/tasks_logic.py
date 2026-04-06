@@ -10,7 +10,7 @@ from fuzzywuzzy import fuzz
 import threading
 import time
 
-from models import Task
+from app.models import Task
 
 
 # ──────────────────────────────────────────────
