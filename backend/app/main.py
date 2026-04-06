@@ -11,9 +11,9 @@ from pydantic import BaseModel
 from datetime import datetime
 from typing import Optional
 
-from database import engine, get_db
-from models import Base, Task
-from tasks_logic import (
+from app.database import engine, get_db
+from app.models import Base, Task
+from app.tasks_logic import (
     group_tasks_by_parent,
     get_urgent_tasks,
     get_childless_parent_tasks,
